@@ -1,0 +1,41 @@
+{
+  "name": "genpark-multi-token-speculative-tree-drafting-accelerator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-token speculative tree drafting accelerator predicting tree-structured candidate tokens for 3x LLM throughput gains.",
+  "author": "genpark",
+  "category": "llm-acceleration",
+  "tags": [
+    "medusa",
+    "eagle",
+    "speculative-decoding",
+    "tree-drafting",
+    "inference-acceleration"
+  ],
+  "inputs": {
+    "prompt_prefix_tokens_count": {
+      "type": "integer"
+    },
+    "speculative_heads_count": {
+      "type": "integer"
+    },
+    "tree_draft_depth": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "drafting_session_id": {
+      "type": "string"
+    },
+    "accepted_tokens_per_step_mean": {
+      "type": "number"
+    },
+    "inference_throughput_speedup_x": {
+      "type": "number"
+    },
+    "exact_kv_verification_passed": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
